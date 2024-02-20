@@ -16,5 +16,6 @@ auto
 *.#*
 chap_*.pdf
 _region_.tex
+*.bkp
 
 main.pdf

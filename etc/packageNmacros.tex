@@ -1,0 +1,149 @@
+\usepackage{ctex}
+
+\usepackage{geometry} %改改尺寸
+\geometry{
+  left=1.25in,
+  right=1.25in,
+  top=1in,
+  bottom=1in
+}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{
+  most
+}
+\newtcolorbox{InnovationBox}[1][]{
+    width=0.95\linewidth,
+    title=科学贡献和创新,
+    fonttitle=\xiaosihao\kaishu\bfseries,
+    fontupper=\kaishu,
+    colback=gray!10!white, colframe=EmphColor,
+    colbacktitle=EmphColor,
+    % colupper=EmphColor,
+    boxrule=0.8pt,
+    enhanced,
+    attach boxed title to top left={
+      xshift=12pt, yshift=-\tcboxedtitleheight/2,
+      yshifttext=-10pt,
+    },
+    #1
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{titlesec}
+
+\titleformat*{\subsection}{\sihao\kaishu\bfseries{}\color{EmphColor}}
+
+%Ms Word 的蓝色和latex xcolor包预定义的蓝色不一样。通过屏幕取色得到。
+\usepackage[]{xcolor}
+\definecolor{NsfcBlue}{RGB}{0, 112, 192}
+\definecolor{EmphColor}{RGB}{218, 100, 20}
+
+\usepackage[unicode, hidelinks]{hyperref} %提供跳转链接
+
+\usepackage[english]{babel} %支持混合语言
+
+\usepackage{graphicx} 
+\graphicspath{{figs/}}     
+
+\usepackage[labelfont=bf]{caption}
+\addto\captionsenglish{
+    \renewcommand{\contentsname}{目录}
+    \renewcommand{\listfigurename}{插图目录}
+    \renewcommand{\listtablename}{表格}
+    %\renewcommand{\refname}{\sihao 参考文献}
+    % 这几个字默认字号稍大，改成四号字，楷书，居左(默认居中) 根据喜好自行修改，官方模板未作要求
+    \renewcommand{\refname}{\sihao \kaishu \leftline{参考文献}}
+    \renewcommand{\abstractname}{摘要}
+    \renewcommand{\indexname}{索引}
+    \renewcommand{\tablename}{表}
+    \renewcommand{\figurename}{\kaishu{}图}
+} %把Figure改成‘图’，reference改成‘参考文献’。如此处理是为了避免和babel包冲突。
+%定义字号
+% \captionsetup[figure]{font=it}
+
+\usepackage{amsmath} %更多数学符号
+\usepackage{wasysym}
+\usepackage{ragged2e}
+\usepackage[inline]{enumitem}
+
+
+\usepackage{physics}
+\usepackage{siunitx}
+
+
+\usepackage[
+    defernumbers=true,
+    backend=biber,
+    % sorting=ymdnt,                     % Year in descending order
+    sorting=ynt,                      % Year in ascending order
+    maxbibnames=3,                   % No. of listed names
+    style=ieee,
+    citestyle=numeric-comp,
+    isbn=false,                       % controls whether the fields isbn/issn/isrn are printed
+    % block=par,
+    doi=false,                        % do not show doi
+    giveninits=false,
+]{biblatex}
+\addbibresource{FundingRef.bib}
+
+\DeclareSortingScheme{ymdnt}{
+  \sort{
+    \field{presort}
+  }
+  \sort[final]{
+    \field{sortkey}
+  }
+  \sort[direction=descending]{
+    \field[strside=left,strwidth=4]{sortyear}
+    \field[strside=left,strwidth=4]{year}
+    \literal{9999}
+  }
+  \sort[direction=descending]{
+    \field{month}
+    \literal{9999}
+  }
+  \sort{
+    \field{sortname}
+    \field{author}
+    \field{editor}
+    \field{translator}
+    \field{sorttitle}
+    \field{title}
+  }
+  \sort{
+    \field{sorttitle}
+    \field{title}
+  }
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont}
+\newcommand{\yihao}{\fontsize{26pt}{\baselineskip}\selectfont}
+\newcommand{\erhao}{\fontsize{22pt}{\baselineskip}\selectfont}
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}
+\newcommand{\sanhao}{\fontsize{16pt}{\baselineskip}\selectfont}
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}
+%字号对照表
+%二号 21pt
+%四号 14
+%小四 12
+%五号 10.5
+%设置行距 1.5倍
+\renewcommand{\baselinestretch}{1.5}
+\XeTeXlinebreaklocale "zh"           % 中文断行
+\setlength{\parskip}{6pt}
+
+\DeclareEmphSequence{\bfseries\color{EmphColor}}
+  
+\newcommand{\namdk}{NAMD\_{\bf k}}
+\newcommand{\hnamd}{Hefei-NAMD}
