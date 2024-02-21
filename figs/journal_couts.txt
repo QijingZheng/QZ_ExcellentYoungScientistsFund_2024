@@ -1,0 +1,68 @@
+     41  J. Phys. Chem. Lett.
+     11  Phys. Chem. Chem. Phys.
+      9  Phys. Rev. B
+      8  J. Phys. Chem. C
+      8  J. Mater. Chem. A
+      6  Appl. Surf. Sci.
+      5  Nano Lett.
+      4  Nanoscale
+      4  J. Mater. Chem. C
+      4  ACS Catal.
+      4  ACS Appl. Mater. Interfaces
+      3  Sci. Adv.
+      3  Phys. Rev. Lett.
+      2  Results Phys.
+      2  npj Comput. Mater.
+      2  Nanotechnology
+      2  Mater. Today Phys.
+      2  J. Am. Chem. Soc.
+      2  Chem. – An Asian J.
+      2  Adv. Mater.
+      2  ACS Nano
+      1  Wiley Interdisciplinary Rev.s: Computational Molecular Science
+      1  Vacuum
+      1  Small
+      1  Sci. China Mater.
+      1  Sci. China Chem.
+      1  RSC Adv.
+      1  Proc. Natl. Acad. Sci.
+      1  Phys. Rev. Mater.
+      1  Phys. E Low-dimensional Syst. Nanostructures
+      1  New J. Chem.
+      1  Nature Communications
+      1  Nat. Comput. Sci.
+      1  Nanoscale Horizons
+      1  Mol. Catal.
+      1  Micromachines
+      1  Mater. Horizons
+      1  J. Power Sources
+      1  J. Physics: Condensed Matter
+      1  J. Phys. D. Appl. Phys.
+      1  J. Phys. Chem. B
+      1  J. Phys. Chem. A
+      1  J. Chem. Inf. Model.
+      1  J. App. Physics
+      1  Int. J. Hydrogen Energy
+      1  Inorg. Chem.
+      1  Inorganic Chem. Frontiers
+      1  Fundam. Res.
+      1  Fuel
+      1  Front. Data Comput.
+      1  Electronic Structure
+      1  Communications Physics
+      1  Chinese Physics Lett.
+      1  Chinese Phys. B
+      1  Chinese J. Chem. Phys.
+      1  Chem. Phys. Rev.
+      1  Chem. Phys.
+      1  Chemical Science
+      1  Chemical Physics Lett.
+      1  Chem. Eng. J.
+      1  Catal. Sci. Technol.
+      1  Appl. Phys. Rev.
+      1  Angewandte Chemie - International Edition
+      1  Adv. Funct. Mater.
+      1  Acta Physica Sinica
+      1  ACS Omega
+      1  ACS Energy Lett.
+      1  ACS Appl. Nano Mater.
