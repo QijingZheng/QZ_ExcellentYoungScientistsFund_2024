@@ -1,5 +1,6 @@
 auto
 *.dvi
+*.blg
 *.bbl
 *.bcf
 *.xml

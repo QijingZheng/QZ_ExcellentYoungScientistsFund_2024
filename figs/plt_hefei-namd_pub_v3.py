@@ -72,7 +72,7 @@ ax.grid('on', which='both',
 ax.xaxis.set_minor_locator(AutoMinorLocator(n=2))
 ax.yaxis.set_minor_locator(AutoMinorLocator(n=2))
 
-ax.plot(pub_year, pub_nums, ls='none',
+ax.plot(pub_year[:-1], pub_nums[:-1], ls='none',
         marker='h', color='b',
         mew=1.5, mfc='w', ms=8,
         zorder=2,
@@ -83,7 +83,7 @@ ax.plot(x0, y0, ls='-', lw=10.0, color='gray', alpha=0.4,
         )
 ax.plot([2024], [15],
         marker='*', color='r',
-        mew=0.8, mfc='w', ms=20)
+        mew=0.4, mfc='r', ms=20)
 
 ax.legend(loc='upper left', fontsize='medium')
 
@@ -96,7 +96,7 @@ for ii in range(pub_year.size):
             fontsize='x-small',
             # family='monospace',
             fontweight='bold',
-            color='tab:red',
+            color='tab:green',
             transform=ax.transData
             # bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5)
     )
@@ -153,6 +153,7 @@ explode = np.zeros_like(JournalCnts, dtype=float)
 patches, texts, pcts = ax.pie(
     JournalCnts,
     labels=JournalName,
+    radius=1.0,
     # autopct='%1.1f%%',
     # autopct=lambda p : '{:.2f}%  ({:,.0f})'.format(p,int(p * TotalCnt/100)),
     autopct=lambda p : '{:,.0f}'.format(int(np.round(p/100*TotalCnt))),

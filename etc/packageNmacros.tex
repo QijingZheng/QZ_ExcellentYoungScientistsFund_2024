@@ -33,6 +33,7 @@
 \usepackage{titlesec}
 
 \titleformat*{\subsection}{\sihao\kaishu\bfseries{}\color{EmphColor}}
+\titleformat*{\subsubsection}{\xiaosihao\kaishu\bfseries{}\color{EmphColor}}
 
 %Ms Word 的蓝色和latex xcolor包预定义的蓝色不一样。通过屏幕取色得到。
 \usepackage[]{xcolor}
@@ -143,7 +144,13 @@
 \XeTeXlinebreaklocale "zh"           % 中文断行
 \setlength{\parskip}{6pt}
 
-\DeclareEmphSequence{\bfseries\color{EmphColor}}
+\DeclareEmphSequence{\kaishu\bfseries\color{EmphColor}}
   
 \newcommand{\namdk}{NAMD\_{\bf k}}
 \newcommand{\hnamd}{Hefei-NAMD}
+
+\newcommand\emphNum[1]{{\large\bfseries{}#1}}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
