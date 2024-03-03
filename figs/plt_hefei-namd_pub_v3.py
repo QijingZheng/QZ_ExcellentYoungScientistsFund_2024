@@ -25,7 +25,9 @@ def PubNum(x, a):
 # plt.style.use('dark_background')
 
 pub_year = np.arange(2016, 2025)
-pub_nums = np.array([1, 3, 7, 12, 16, 26, 39, 54, 15])
+pub_nums = np.array([1, 3, 7, 12, 16, 23, 40, 56, 17])
+
+assert pub_nums.sum() == 175
 
 o, v = curve_fit(PubNum, pub_year[:-1], pub_nums[:-1])
 
@@ -129,7 +131,7 @@ with open('journal_couts.txt', 'r') as inp:
             JournalCnts.append(cc)
             JournalName.append(' '.join(tmp[1:]))
 
-assert TotalCnt == 173
+assert TotalCnt == pub_nums.sum()
 
 JournalCnts.append(TotalCnt - np.sum(JournalCnts))
 JournalName.append(
@@ -158,10 +160,11 @@ patches, texts, pcts = ax.pie(
     # autopct=lambda p : '{:.2f}%  ({:,.0f})'.format(p,int(p * TotalCnt/100)),
     autopct=lambda p : '{:,.0f}'.format(int(np.round(p/100*TotalCnt))),
     textprops={'size': 'x-small', 'weight': 'bold'},
-    wedgeprops={'linewidth': 0.5, 'edgecolor': 'white'},
-    startangle=40,
+    wedgeprops={'linewidth': 0.8, 'edgecolor': 'white'},
+    startangle=45,
     explode=list(explode),
 )
+plt.setp(patches[-1], facecolor='purple')
 plt.setp(pcts, color='white', fontweight='bold')
 plt.setp(texts, fontweight=600)
 for ii, patch in enumerate(patches):

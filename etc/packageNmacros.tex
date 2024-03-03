@@ -8,6 +8,28 @@
   bottom=1in
 }
 
+\usepackage{tikz}
+\usetikzlibrary{
+    arrows,
+    positioning,
+    calc,
+    arrows,
+    arrows.meta,
+    decorations.pathmorphing,
+    decorations.footprints,
+    decorations.text,
+    intersections,
+    shapes,
+    shapes.arrows,
+    snakes,
+    datavisualization,
+    mindmap,
+    backgrounds,
+    shadings,
+    patterns,
+    overlay-beamer-styles,
+}
+
 \usepackage{tcolorbox}
 \tcbuselibrary{
   most
@@ -29,16 +51,28 @@
     #1
 }
 
+\usepackage{csquotes}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{titlesec}
 
+\titleformat*{\section}{\sihao\kaishu\bfseries{}\color{EmphColor}}
 \titleformat*{\subsection}{\sihao\kaishu\bfseries{}\color{EmphColor}}
 \titleformat*{\subsubsection}{\xiaosihao\kaishu\bfseries{}\color{EmphColor}}
+
+\titlespacing*{\section}{0pt}{3pt plus 3pt}{3pt plus 3pt}
+\titlespacing*{\subsection}{0pt}{3pt plus 3pt}{3pt plus 3pt}
 
 %Ms Word 的蓝色和latex xcolor包预定义的蓝色不一样。通过屏幕取色得到。
 \usepackage[]{xcolor}
 \definecolor{NsfcBlue}{RGB}{0, 112, 192}
 \definecolor{EmphColor}{RGB}{218, 100, 20}
+% \definecolor{CommentColor}{RGB}{187, 18, 15}
+% \definecolor{CommentColor}{RGB}{228, 13, 8}
+% \definecolor{CommentColor}{RGB}{29, 65, 213}
+\definecolor{CommentColor}{RGB}{31, 45, 168}
+% \definecolor{EmphColor}{HTML}{014C04}
+% \definecolor{EmphColor}{HTML}{5A438E}
+% \definecolor{EmphColor}{RGB}{127, 52, 13}
 
 \usepackage[unicode, hidelinks]{hyperref} %提供跳转链接
 

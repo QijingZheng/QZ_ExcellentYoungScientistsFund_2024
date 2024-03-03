@@ -1,14 +1,14 @@
      41  J. Phys. Chem. Lett.
      11  Phys. Chem. Chem. Phys.
-      9  Phys. Rev. B
+     10  Phys. Rev. B
       8  J. Phys. Chem. C
-      8  J. Mater. Chem. A
+      8  Nano Lett.
+      7  J. Mater. Chem. A
       6  Appl. Surf. Sci.
-      5  Nano Lett.
       4  Nanoscale
       4  J. Mater. Chem. C
-      4  ACS Catal.
       4  ACS Appl. Mater. Interfaces
+      3  ACS Catal.
       3  Sci. Adv.
       3  Phys. Rev. Lett.
       2  Results Phys.
@@ -18,7 +18,7 @@
       2  J. Am. Chem. Soc.
       2  Chem. – An Asian J.
       2  Adv. Mater.
-      2  ACS Nano
+      1  ACS Nano
       1  Wiley Interdisciplinary Rev.s: Computational Molecular Science
       1  Vacuum
       1  Small
@@ -26,6 +26,7 @@
       1  Sci. China Chem.
       1  RSC Adv.
       1  Proc. Natl. Acad. Sci.
+      1  Phys. Rev. Appl.
       1  Phys. Rev. Mater.
       1  Phys. E Low-dimensional Syst. Nanostructures
       1  New J. Chem.
